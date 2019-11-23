@@ -1,10 +1,8 @@
 package ru.stqa.pft.sandbox;
 
-import org.testng.annotations.Test;
-
 public class SquareTests {
 
-    @Test
+    @org.testng.annotations.Test
     public void testArea()
     {
         Square s = new Square(5);
