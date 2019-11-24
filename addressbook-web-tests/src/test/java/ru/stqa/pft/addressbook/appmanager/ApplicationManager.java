@@ -47,7 +47,12 @@ public class ApplicationManager {
     }
 
     public void initGroupCreation() {
-      wd.findElement(By.name("group_name")).click();
+      wd.findElement(By.name("new")).click();
+    }
+
+    public void initRecordCreation()
+    {
+        wd.findElement(By.linkText("add new")).click();
     }
 
     public void gotoGroupPage() {
