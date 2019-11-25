@@ -36,4 +36,20 @@ public class RecordHelper extends HelperBase {
 
         click(By.linkText("home page"));
     }
+
+    public void selectRecord() {
+        click(By.name("selected[]"));
+    }
+
+    public void deleteRecord() {
+        click(By.xpath("//input[@value='Delete']"));
+    }
+
+    public void initRecordModification() {
+        click(By.xpath("//img[@alt='Edit']"));
+    }
+
+    public void submitRecordModification() {
+        click(By.xpath("//input[@name='update']"));
+    }
 }
