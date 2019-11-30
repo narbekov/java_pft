@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.RecordModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-11-30T13:10:12" hostname="Славян" time="2.227">
+  <properties/>
+  <testcase name="testRecordModification" classname="ru.stqa.pft.addressbook.tests.RecordModificationTests" time="2.227"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 36742
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+нояб. 30, 2019 4:10:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
