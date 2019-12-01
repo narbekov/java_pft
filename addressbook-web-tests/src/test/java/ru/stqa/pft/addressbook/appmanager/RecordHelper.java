@@ -32,6 +32,7 @@ public class RecordHelper extends HelperBase {
       type(By.name("address"),recordData.getAddress());
       type(By.name("mobile"),recordData.getMobile());
       type(By.name("email"),recordData.getEmail());
+
       if (creation)
       {
           new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(recordData.getGroup());
@@ -39,7 +40,6 @@ public class RecordHelper extends HelperBase {
       {
           Assert.assertFalse(isElementPresent(By.name("new_group")));
       }
-
     }
 
     public void returnToMainPage() {
@@ -61,5 +61,20 @@ public class RecordHelper extends HelperBase {
 
     public void submitRecordModification() {
         click(By.xpath("//input[@name='update']"));
+    }
+
+    public void createRecord(RecordData recordData, boolean creation) {
+        initRecordCreation();
+        fillInfoForm(recordData,creation);
+        submitNewCreatedRecord();
+        returnToMainPage();
+    }
+
+    public boolean isThereARecord() {
+        return isElementPresent(By.name("selected[]"));
+    }
+
+    public boolean isThereARecordEditElement() {
+        return isElementPresent(By.xpath("//img[@alt='Edit']"));
     }
 }
