@@ -10,7 +10,7 @@ public class RecordDeletionTests extends TestBase{
     {
         if (!app.getRecordHelper().isThereARecord())
         {
-            app.getRecordHelper().createRecord(new RecordData("Vyacheslav", "Slava", "Narbekov", "spirit29", "QA", "VMedia", "Loginova 80-1", "+79210780445", "narbeckov.slava@yandex.ru", "test1"),true);
+            app.getRecordHelper().createRecord(new RecordData("Vyacheslav", "Slava", "Narbekov", "spirit29", "QA", "VMedia", "Loginova 80-1", "+79210780445", "narbeckov.slava@yandex.ru"));
         }
         app.getRecordHelper().selectRecord();
         app.getRecordHelper().deleteRecord();

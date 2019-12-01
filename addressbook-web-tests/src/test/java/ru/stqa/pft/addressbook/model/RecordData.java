@@ -10,9 +10,8 @@ public class RecordData {
     private final String address;
     private final String mobile;
     private final String email;
-    private final String group;
 
-    public RecordData(String firstname, String middlename, String lastname, String nickname, String title, String company, String address, String mobile, String email, String group) {
+    public RecordData(String firstname, String middlename, String lastname, String nickname, String title, String company, String address, String mobile, String email) {
         this.firstname = firstname;
         this.middlename = middlename;
         this.lastname = lastname;
@@ -22,7 +21,6 @@ public class RecordData {
         this.address = address;
         this.mobile = mobile;
         this.email = email;
-        this.group = group;
     }
 
     public String getFirstname() {
@@ -59,9 +57,5 @@ public class RecordData {
 
     public String getEmail() {
         return email;
-    }
-
-    public String getGroup() {
-        return group;
     }
 }
