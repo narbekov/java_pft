@@ -2,6 +2,8 @@ package ru.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import ru.stqa.pft.addressbook.model.RecordData;
 
 public class RecordHelper extends HelperBase {
@@ -20,7 +22,7 @@ public class RecordHelper extends HelperBase {
         click(By.xpath("(//input[@name='submit'])[2]"));
     }
 
-    public void fillInfoForm(RecordData recordData) {
+    public void fillInfoForm(RecordData recordData, boolean creation) {
       type(By.name("firstname"),recordData.getFirstname());
       type(By.name("middlename"),recordData.getMiddlename());
       type(By.name("lastname"),recordData.getLastname());
@@ -30,6 +32,14 @@ public class RecordHelper extends HelperBase {
       type(By.name("address"),recordData.getAddress());
       type(By.name("mobile"),recordData.getMobile());
       type(By.name("email"),recordData.getEmail());
+      if (creation)
+      {
+          new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(recordData.getGroup());
+      } else
+      {
+          Assert.assertFalse(isElementPresent(By.name("new_group")));
+      }
+
     }
 
     public void returnToMainPage() {

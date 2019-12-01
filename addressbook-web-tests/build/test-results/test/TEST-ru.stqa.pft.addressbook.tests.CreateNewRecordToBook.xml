@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.pft.addressbook.tests.CreateNewRecordToBook" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-01T12:34:49" hostname="Славян" time="2.654">
+  <properties/>
+  <testcase name="testCreateNewRecordToBook" classname="ru.stqa.pft.addressbook.tests.CreateNewRecordToBook" time="2.654"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 7198
+Only local connections are allowed.
+Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+дек. 01, 2019 3:34:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

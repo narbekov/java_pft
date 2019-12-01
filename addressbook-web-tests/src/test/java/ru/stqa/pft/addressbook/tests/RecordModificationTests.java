@@ -9,7 +9,7 @@ public class RecordModificationTests extends TestBase {
     public void testRecordModification()
     {
         app.getRecordHelper().initRecordModification();
-        app.getRecordHelper().fillInfoForm(new RecordData("Vasiliy", "Vasya", "Pupkin", "pupkin", "junior QA", "KartinaCanada", "Nab.Sev.Dviny 30", "88003535", "qwerty@mail.com"));
+        app.getRecordHelper().fillInfoForm(new RecordData("Vasiliy", "Vasya", "Pupkin", "pupkin", "junior QA", "KartinaCanada", "Nab.Sev.Dviny 30", "88003535", "qwerty@mail.com",null),false);
         app.getRecordHelper().submitRecordModification();
         app.getRecordHelper().returnToMainPage();
     }
